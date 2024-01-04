@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<style type=""text/css>
+	.img_deg{float: right;}
+	</style>
+	<head>
+		<title>Nature's Gift | Wyatt Todd</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="shortcut icon" type="x-icon" href="images/toad.png">
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Wyatt Todd</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Projects</a></li>
+							<li class="active"><a href="generic.html">Nature's Gift</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h2>Nature's Gift</h2>
+									<p>Inspired by the "Bash" ability from Ori and the Blind Forest, I set out to make a 3d platformer that had its interesting movement mechanics tied to interacting with the enemies in the level.</p>
+								</header>
+								<center><iframe width="800" height="450" src="https://www.youtube.com/embed/nhiqITmBrSA?si=dmmF5-7PM_tRDuyl" title="YouTube video player" frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
+								<hr />
+								<h2 align = "center">Research</h2>
+								<p>I took an in depth look at what made bash so satisfying in Ori and came to the conclusion that the process of gaining a significant amount of momentum from interacting with enemies was what made it so fun. Sure the game
+								could have just given you a mid-air dash and called it a day, but the fact that you have to manouver through the air to reach an enemy to use your best movement tool was incredibly satisfying.<br/><br/>
+								Another game that sort of does this is Celeste with their dash-recharging gem. While it isn't quite as satisfying as bash is (in my opinion), dashing through a gem to recharge your only movement tool so you can cover more distance is also
+								incredibly satisfying. 
+								</p>
+								<hr />
+								<h2 align = "center">Initial Design</h2>
+								<center><img src="/images/pic07.jpg" width="800" height="500"></center>
+								<p>Since I wanted the setting of this game to be in a forest (because I like trees & not because Ori takes place in a forest too) while also not wanting to delve too deep into a fantasy genre, I came up with the silly idea
+								that the "enemies" that the player would jump/bash off of would be birds. Not because the birds were inherently evil, but because it was funny. Especially since I had decided to name this game "Nature's Gift" which would make it
+								incredibly ironic.<br />
+								After deciding on the direction I wanted to go for NG, I grabbed my tree model and grass/stone landscape brush, made a quick and made the first level of the game which would serve as the tutorial for the game. Since I was still
+								figuring out what I specifically wanted to do with the core game mechanics
+								<hr />
+								<h2 align = "center">Core Game Mechanics</h2>
+								<p>When I initially designed the core movement of the game, I had it so that if you touched a bird (placeholder was a cube) at any point, you would "store" a jump like in celeste that you could use mid-air at any time before hitting the ground.
+								However, I quickly realized that it made more sense if you could only jump again if you were near the bird so that it felt like you were boosting off of them like in Ori.</p>
+								<center><img src="/images/pic08.jpg" width="800" height="500"></center>
+								<p>Once I settled on something more akin to bash than the gems, I began designing all of the types of birds that the player could jump off of. In the end, I had created 4 birds total to use in my level:</p>
+								<ul>
+									<li>Blue Birds: Pressing the jump key near these would make the character jump immediately. These would be the most common bird throughout the game because of how simple yet versatile they are</li>
+									<li>Red Birds: Same as blue birds, except they will take away 1/5 of your health bar whenever you jump off of them as if they retaliated and did damage to you before vanishing. These birds would be used as a way to restrict the player for taking an easier route earlier in the level.
+									The harder route will never have any red birds which means if you take an easier route in one section, you are locking yourself out of the next easier section before the next checkpoint.</li>
+									<li>Green Birds: Pressing jump near these birds will shoot the player towards the direction they are looking at incredible speeds. Not only that, but it factors in your momentum, so if you jump off of 2 green birds in a row,
+									you will go much further. While these aren't as common as the blue or red birds, green birds are what most of the sections are designed around as they are by for the most fun bird to use.</li>
+									<li>Orange Birds: Same as the blue birds, except they move in a fixed pattern. These are meant to make the player think about when to start their initial jump as jumping too early or too late could mean missing this bird.</li>
+								</ul>
+								I originally planned to have these as different types of birds instead of being the same model but recolored (such as the blue bird being a pigeon and the red bird being a hawk), but I decided to focus more on the mechanics and level design
+								of the game more as it was more important than having better bird models.</p>
+								<hr />
+								<h2 align = "center">Level Design</h2>
+								<p>For the tutorial level, I didn't specifically place any trees down and had instead just used the foliage brush to let fate decide where to put them. I would then make the level around where the trees ended up spawning.
+								This unsurprisingly turned out to be not a very effective level design solution as I was restricted to only adding tree platforms where a tree happened to be. However, since it was just the tutorial level and I had no intentions
+								of making it any more than just a way for the play to learn about the different types of birds and the currently level layout was already decent, I just left it as is.<br/>
+								As for the level itself, it starts the player off by showing them a single blue bird so they can figure out what it does, followed by more sections of just blue birds. The player is then introduced to the red bird as well as an example
+								of a split path where you could take an easier route if you had more health to work with. It also showcases that when reaching a checkpoint, your health is refilled. Lastly, the player is introduced to the green bird and learns about its
+								dashing properties. Once every major bird is introduced, the game gives you a test to put all of your knowledge together before finishing the tutorial.<br/>
+								<center><img src="/images/pic09.jpg" width="850" height="500"></center>
+								I believe this serves as a good tutorial since it showcases every major type of bird while also not being incredibly hand holdy.</p>
+								<hr />
+								<h2 align = "center">The Main Level</h2>
+								<p>The main level is where I put my previous experimentation learnings to good use. Most imporantly, I placed the trees that you would be jumping to first and then building the rest of the scenery around that. I also had scaled the
+								scenery up quite a large amount so that I could make more intracate sections that utilize more momentum based platforming. That, and it also made it a bit more believeable that the character would die* when falling from that height.
+								I also made sure to introduce the orange bird instantly as it wasn't present in the first level, but still basically just boiled down to a blue bird that moves.</p>
+								<center><img src="/images/pic10.jpg" width="850" height="500"></center>
+								<p>After introducing the player to the orange bird, they are thrusted straight into action. There's quite a difficulty spike compared to the tutorial level, but the lack of a respawn button means the player can try again immediately.
+								This level utilizes the extra distance between trees to its fullest. All of the sections require you to keep your momentum from the green bird or else you'll be too slow to reach the next bird or the platform.
+								I also implemented 2 dash birds in 1 section multiple times so that the player will feel like they're flying through the forest. Those sections were always the most satisfying to complete.<br/>
+								The player will eventually start making their way through an incredibly thick patch of trees before the ultimate big bad of the game is revealed. Big Bird.
+								</p>
+								<hr />
+								<h2 align = "center">Ending</h2>
+								<center><img src="/images/pic11.jpg" width="850" height="500"></center>
+								<p>The final big bird boss fight was included as a way to end the game without it feeling too sudden while also allowing it to showcase just how silly and nonsensical the game concept is. It also was an excuse to put as many green birds as humanly possible.<br/>
+								Overall, I'm quite happy with this game. Although I have a ways to go, I'm quite proud of it considering it was my first attempt at a full game.
+								</p>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section class="split contact">
+							<section>
+								<h3>Phone</h3>
+								<p><a href="#">(512) 998-1424</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">nothatsatoad@gmail.com</a></p>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
